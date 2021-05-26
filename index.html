@@ -10,6 +10,7 @@
 
 <body>
     <script>
+        // return computer's choice
         function computerPlay() {
             let random = Math.floor((Math.random() * 3) + 1);
             let play;
@@ -25,6 +26,7 @@
             return play;
         }
 
+        // play a round
         function playRound(playerSelection, computerSelection) {
             playerSelection = playerSelection.toUpperCase();
             let result;
@@ -74,6 +76,7 @@
             return result;
         }
 
+        // play 5 rounds
         function game() {
             let playerScore = 0;
             let computerScore = 0;
